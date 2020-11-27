@@ -1,4 +1,10 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'D2Coding';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 /*!
 * Start Bootstrap - Creative v6.0.4 (https://startbootstrap.com/theme/creative)
 * Copyright 2013-2020 Start Bootstrap
@@ -11,6 +17,11 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
+  --oasis-red: #D3424B;
+  --oasis-yellow: #EFCC45;
+  --oasis-blue: #5390C9;
+  --oasis-night: #121734;
+  --oasis-sand: #F6D88B;
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -111,6 +122,7 @@ ul,
 dl {
   margin-top: 0;
   margin-bottom: 1rem;
+  list-style: none;
 }
 
 ol ol,
@@ -204,6 +216,93 @@ img {
 svg {
   overflow: hidden;
   vertical-align: middle;
+}
+
+img.emblem {
+  padding: 10px;
+  height: 180px;
+}
+
+.schedule_list::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 1px;
+  background-color: var(--oasis-red);
+}
+
+.schedule_list {
+  position: relative;
+  margin: 75px auto 0;
+  width: 994px;
+  white-space: nowrap;
+}
+
+.schedule_list .schedule_list_item::before {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  background-color: var(--oasis-red);
+  transform: translateX(-50%);
+  content: '';
+  border-radius: 10px;
+}
+
+.schedule_list .schedule_list_item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  color: #000;
+}
+
+.schedule_list .schedule_list_item:first-child {
+  margin: -9px 60px 0 -39px;
+}
+
+.schedule_list .schedule_list_item:nth-child(2) {
+  margin: -9px 50px 0 0;
+}
+
+.schedule_list .schedule_list_item:nth-child(3) {
+  margin: -9px 55px 0 0;
+}
+
+.schedule_list .schedule_list_item:nth-child(4) {
+  margin: -9px 57px 0 0;
+}
+
+.schedule_list .schedule_list_item:nth-child(5) {
+  margin: -9px 0 0;
+}
+
+.schedule_list .schedule_info {
+  padding-top: 48px;
+  text-align: center;
+  width: 150px;
+}
+
+.schedule_list .schedule_info .schedule_title {
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: -0.6px;
+  color: var(--oasis-red);
+}
+
+.schedule_list .schedule_info .schedule_date {
+  padding-top: 6px;
+  line-height: 36px;
+  color: #000;
+  letter-spacing: -1.2px;
+}
+
+.schedule_list .schedule_info .schedule_add_info {
+  padding-top: 6px;
+  font-size: 16px;
+  color: #999;
 }
 
 table {
@@ -2437,19 +2536,18 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #f4623a;
-  border-color: #f4623a;
+  background-color: var(--oasis-yellow);
+  border-color: var(--oasis-yellow);
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #f24516;
-  border-color: #ee3e0d;
+  background-color: var(--oasis-red);
+  border-color: var(--oasis-red);
 }
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #f24516;
-  border-color: #ee3e0d;
+  background-color: var(--oasis-red);
+  border-color: var(--oasis-red);
   box-shadow: 0 0 0 0.2rem rgba(246, 122, 88, 0.5);
 }
 .btn-primary.disabled, .btn-primary:disabled {
@@ -6073,7 +6171,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #f4623a !important;
+  background-color: #fff !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -9746,6 +9844,10 @@ button.bg-dark:focus {
   text-transform: capitalize !important;
 }
 
+.font-d2 {
+  font-family: 'D2Coding' !important;
+}
+
 .font-weight-light {
   font-weight: 300 !important;
 }
@@ -9986,7 +10088,7 @@ html {
 hr.divider {
   max-width: 3.25rem;
   border-width: 0.2rem;
-  border-color: #8898c4;
+  border-color: var(--oasis-yellow);
 }
 
 hr.light {
@@ -10028,10 +10130,10 @@ hr.light {
   padding: 0.75rem 0;
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
-  color: #f4623a;
+  color: var(--oasis-yellow);
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
-  color: #f4623a !important;
+  color: var(--oasis-yellow) !important;
 }
 @media (min-width: 992px) {
   #mainNav {
@@ -10056,26 +10158,26 @@ hr.light {
   }
   #mainNav.navbar-scrolled {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    background-color: #fff;
+    background-color: var(--oasis-night);
   }
   #mainNav.navbar-scrolled .navbar-brand {
-    color: #212529;
+    color: rgba(255, 255, 255, 0.7);
   }
   #mainNav.navbar-scrolled .navbar-brand:hover {
-    color: #f4623a;
+    color: var(--oasis-yellow);
   }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
-    color: #212529;
+    color: rgba(255, 255, 255, 0.7);
   }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
-    color: #f4623a;
+    color: var(--oasis-yellow);
   }
 }
 
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(97, 96, 109, 0.8) 0%, rgba(97, 96, 109, 0.8) 100%), url("../assets/img/main_image.png");
+  background: url("../assets/img/main_image.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
