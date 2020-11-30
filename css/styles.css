@@ -5,6 +5,10 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'NanumSquare';
+  src: url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css") format('woff');
+}
 /*!
 * Start Bootstrap - Creative v6.0.4 (https://startbootstrap.com/theme/creative)
 * Copyright 2013-2020 Start Bootstrap
@@ -223,6 +227,11 @@ img.emblem {
   height: 180px;
 }
 
+.background-gradient {
+  background: rgb(246,216,139);
+  background: linear-gradient(180deg, rgba(246,216,139,1) 0%, rgba(255,255,255,1) 100%);
+}
+
 .schedule_list::before {
   content: '';
   position: absolute;
@@ -303,6 +312,18 @@ img.emblem {
   padding-top: 6px;
   font-size: 16px;
   color: #999;
+}
+
+.mission_title {
+  color: var(--oasis-blue);
+  font-family: 'D2Coding' !important;
+}
+
+.notice_untact {
+  color: grey;
+  font-size:1.2em;
+  margin-top: 30px;
+  text-align: center;
 }
 
 table {
@@ -535,6 +556,14 @@ mark,
 .mark {
   padding: 0.2em;
   background-color: #fcf8e3;
+}
+
+.spacing-1 {
+  letter-spacing: -1px;
+}
+
+.spacing-2 {
+  letter-spacing: -2px;
 }
 
 .list-unstyled {
@@ -4357,7 +4386,7 @@ input[type=button].btn-block {
   color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-toggler {
-  color: rgba(0, 0, 0, 0.5);
+  background-color: #fff;
   border-color: rgba(0, 0, 0, 0.1);
 }
 .navbar-light .navbar-toggler-icon {
@@ -5657,6 +5686,160 @@ a.close.disabled {
     max-width: 1140px;
   }
 }
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 8% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;                         
+}
+
+.modal-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: right;
+  margin-bottom: 0;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.popup_header {
+  height: 50px;
+}
+
+.popup_title {
+  overflow: hidden;
+  display: block;
+  padding: 0 0 0 10px;
+  font-size: 24px;
+  letter-spacing: -.96px;
+  font-family: D2Coding;
+}
+
+.popup_content.scroll {
+  overflow: hidden;
+  overflow-y: auto;
+  height: 400px;
+}
+
+.progress_container {
+  padding-top: 39px;
+  background-color: #f6f7f9;
+}
+
+.progress_list {
+  padding: 19px 0 13px;
+  color: #333;
+}
+
+.progress_list + .progress_list {
+  border-top: 1px solid #ddd;
+}
+
+.progress_list:first-child {
+  padding-top: 0;
+}
+
+.progress_title {
+  float: left;
+  position: relative;
+  width: 190px;
+  padding-left: 16px;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: D2Coding;
+  line-height: 28px;
+  letter-spacing: -.4px;
+}
+
+.progress_info {
+  overflow: hidden;
+}
+
+.progress_info_list {
+  position: relative;
+  padding-left: 11px;
+  line-height: 30px;
+  font-family: 'NanumSquare'
+}
+
+.progress_info_list::before {
+  content: '- ';
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.criteria_list {
+  position: relative;
+  padding-bottom: 20px;
+  font-family: "NanumSquare";
+}
+
+.criteria {
+  position: relative;
+  padding-left: 11px;
+  margin-bottom: 0px;
+  font-family: "NanumSquare";
+}
+
+.criteria::before {
+  content: '∙ ';
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.highlight-red {
+  color: var(--oasis-red);
+}
+
+.highlight-blue {
+  color: var(--oasis-blue);
+}
+
+.registeration_info {
+  overflow: hidden;
+  text-align: left;
+  font-size: 24px;
+  background-color: #fff;
+  color: var(--oasis-night);
+}
+
+.registeration_info dt {
+  float: left;
+  min-width: 92px;
+  padding-right: 18px;
+  letter-spacing: -0.43px;
+  color: var(--oasis-red);
+}
+
+.registeration_info dd {
+  overflow: hidden;
+  letter-spacing: -0.25px;
+}
+
 .tooltip {
   position: absolute;
   z-index: 1070;
@@ -7697,6 +7880,10 @@ button.bg-dark:focus {
 .mt-5,
 .my-5 {
   margin-top: 3rem !important;
+}
+
+.mt-6 {
+  margin-top: 4rem !important;
 }
 
 .mr-5,
@@ -9848,6 +10035,10 @@ button.bg-dark:focus {
   font-family: 'D2Coding' !important;
 }
 
+.font-nanum {
+  font-family: 'NanumSquare' !important;
+}
+
 .font-weight-light {
   font-weight: 300 !important;
 }
@@ -10101,26 +10292,31 @@ hr.light {
 
 .btn-xl {
   padding: 1.25rem 2.25rem;
-  font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
   border: none;
   border-radius: 10rem;
+  font-size: 1.25em;
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 6rem 0;
+}
+
+.background-highlight {
+  background: var(--oasis-night) !important;
+  color: #fff;
 }
 
 #mainNav {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  background-color: #fff;
+  background-color: var(--oasis-night);
   transition: background-color 0.2s ease;
 }
 #mainNav .navbar-brand {
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
-  color: #212529;
+  color: #fff;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   color: #6c757d;
