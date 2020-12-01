@@ -234,7 +234,7 @@ img.emblem-small {
 
 .channel_thumbnail {
   width: 200px;
-  border-radius: 100px;
+  border-radius: 70px;
 }
 
 .channel_info {
@@ -540,6 +540,10 @@ h6, .h6 {
   font-weight: 300;
 }
 
+.line-height-30 {
+  line-height: 30px;
+}
+
 .display-1 {
   font-size: 6rem;
   font-weight: 300;
@@ -581,6 +585,10 @@ mark,
 .mark {
   padding: 0.2em;
   background-color: #fcf8e3;
+}
+
+.spacing-0 {
+  letter-spacing: -0.3px;
 }
 
 .spacing-1 {
@@ -5846,6 +5854,7 @@ a.close.disabled {
 
 .registeration_info {
   overflow: hidden;
+  padding: 10px;
   text-align: left;
   font-size: 20px;
   background-color: #fff;
@@ -5878,7 +5887,7 @@ a.close.disabled {
 
 .faq_question {
   position: relative;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 36px;
   letter-spacing: -0.75px;
 }
@@ -5894,7 +5903,7 @@ a.close.disabled {
 
 .faq_answer {
   padding-top: 10px;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 36px;
   letter-spacing: -0.75px;
   color: #747474;
@@ -10351,12 +10360,12 @@ hr.light {
 }
 
 .btn-xl {
-  padding: 1.25rem 2.25rem;
+  padding: 1rem 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
   border: none;
   border-radius: 10rem;
-  font-size: 1.25em;
+  font-size: 1.1em;
 }
 
 .page-section {

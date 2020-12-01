@@ -77,5 +77,32 @@
           modal.style.display = "none";
       }
   }
+  
+  var acodian = {
+
+    click: function(target) {
+      var _self = this,
+        $target = $(target);
+      $target.on('click', function() {
+        var $this = $(this);
+        if ($this.next('test').css('display') == 'none') {
+          $('test').slideUp();
+          _self.onremove($target);
+  
+          $this.addClass('on');
+          $this.next().slideDown();
+        } else {
+          $('test').slideUp();
+          _self.onremove($target);
+  
+        }
+      });
+    },
+    onremove: function($target) {
+      $target.removeClass('on');
+    }
+  
+  };
+  acodian.click('dt');
 
 })(jQuery); // End of use strict
