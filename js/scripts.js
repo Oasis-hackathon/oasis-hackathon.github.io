@@ -86,8 +86,4 @@
     });
   });
 
-  if ($('.profile_content').css('display') == 'block') {
-    $('.cross').html('-');
-  };
-
 })(jQuery); // End of use strict
