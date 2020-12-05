@@ -78,31 +78,16 @@
       }
   }
   
-  var acodian = {
+  $('.profile_toggle').click(function() {
+    $('.profile_content').toggle('fast', function() {
+      if ($('.profile_content').css('display') == 'none') {
+        $('.profile_content').css('display') = 'block';
+      };
+    });
+  });
 
-    click: function(target) {
-      var _self = this,
-        $target = $(target);
-      $target.on('click', function() {
-        var $this = $(this);
-        if ($this.next('test').css('display') == 'none') {
-          $('test').slideUp();
-          _self.onremove($target);
-  
-          $this.addClass('on');
-          $this.next().slideDown();
-        } else {
-          $('test').slideUp();
-          _self.onremove($target);
-  
-        }
-      });
-    },
-    onremove: function($target) {
-      $target.removeClass('on');
-    }
-  
+  if ($('.profile_content').css('display') == 'block') {
+    $('.cross').html('-');
   };
-  acodian.click('dt');
 
 })(jQuery); // End of use strict

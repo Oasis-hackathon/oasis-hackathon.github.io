@@ -244,6 +244,10 @@ img.emblem-small {
   color: var(--oasis-blue);
 }
 
+.channel_info:hover {
+  text-decoration: none;
+}
+
 .sns {
   padding: 10px 0;
 }
@@ -528,7 +532,7 @@ h4, .h4 {
 }
 
 h5, .h5 {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
 }
 
 h6, .h6 {
@@ -5842,6 +5846,80 @@ a.close.disabled {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.profile_toggle {
+  margin-bottom: 16px;
+  border-radius: 4px;
+  box-shadow: rgba(0,0,0,0.25) 0px;
+  background-color: var(--oasis-yellow);
+  display: flex;
+  cursor: pointer;
+}
+
+.brick {
+  margin-top: 1em;
+}
+
+.cross {
+  margin: 0px 0.6em 0px 2em;
+  line-height: 3.8em;
+  height: 28px;
+  font-family: "D2Coding";
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #fff;
+}
+
+.profile_button {
+  padding-right: 1em;
+  padding-top: 1em;
+  font-family: "D2Coding";
+  font-size: 24px;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #fff;
+}
+
+.profile_content {
+  display: none;
+}
+
+.profile_img {
+  width: 160px;
+  height: auto;
+  float: left;
+  margin: 10px;
+}
+
+.profile_name {
+  font-size: 16px;
+  text-align: left;
+  font-family: 'NanumSquare';
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+.profile_spec {
+  font-size: 12px;
+  text-align: left;
+  font-family: 'NanumSquare';
+}
+
+.profile_contact {
+  text-align: left;
+  font-size: 12px;
+  font-family: 'NanumSqaure';
+}
+
+.profile_contact a {
+  text-decoration: underline;
+
+  color: grey;
 }
 
 .highlight-red {
