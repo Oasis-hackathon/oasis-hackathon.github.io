@@ -60,4 +60,30 @@
     }
   });
 
+  var modal = document.getElementById('myModal');
+  var btn = document.getElementById("myBtn");
+  var span = document.getElementsByClassName("modal-close")[0];                                          
+
+  btn.onclick = function() {
+      modal.style.display = "block";
+  }
+
+  span.onclick = function() {
+      modal.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  
+  $('.profile_toggle').click(function() {
+    $('.profile_content').toggle('fast', function() {
+      if ($('.profile_content').css('display') == 'none') {
+        $('.profile_content').css('display') = 'block';
+      };
+    });
+  });
+
 })(jQuery); // End of use strict
