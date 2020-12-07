@@ -267,13 +267,11 @@ img.emblem-small {
 }
 
 .schedule_date {
-  font-size: 1.2em;
   text-align: right;
   letter-spacing: -.5px;
 }
 
 .schedule_name {
-  font-size: 1.3em;
   color: var(--oasis-red);
   text-align: left;
   letter-spacing: -.5px;
