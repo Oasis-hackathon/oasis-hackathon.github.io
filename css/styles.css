@@ -75,7 +75,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Merriweather", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "NanumSquare", "Merriweather", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -5755,7 +5755,6 @@ a.close.disabled {
   position: relative;
   padding-left: 11px;
   line-height: 30px;
-  font-family: 'NanumSquare'
 }
 
 .progress_info_list::before {
@@ -5768,14 +5767,12 @@ a.close.disabled {
 .criteria_list {
   position: relative;
   padding-bottom: 20px;
-  font-family: "NanumSquare";
 }
 
 .criteria {
   position: relative;
   padding-left: 11px;
   margin-bottom: 0px;
-  font-family: "NanumSquare";
 }
 
 .criteria::before {
@@ -5836,7 +5833,6 @@ a.close.disabled {
 .profile_name {
   font-size: 16px;
   text-align: left;
-  font-family: 'NanumSquare';
   margin-bottom: 10px;
   padding-top: 10px;
 }
@@ -5844,13 +5840,11 @@ a.close.disabled {
 .profile_spec {
   font-size: 12px;
   text-align: left;
-  font-family: 'NanumSquare';
 }
 
 .profile_contact {
   text-align: left;
   font-size: 12px;
-  font-family: 'NanumSqaure';
 }
 
 .profile_contact a {
