@@ -5896,7 +5896,7 @@ a.close.disabled {
 
 .faq_question {
   position: relative;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 36px;
   letter-spacing: -0.75px;
 }
@@ -5912,7 +5912,7 @@ a.close.disabled {
 
 .faq_answer {
   padding-top: 10px;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 36px;
   letter-spacing: -0.75px;
   color: #747474;
