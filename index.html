@@ -72,13 +72,15 @@
             left: 0;
             bottom: 0;
             right: 0;
-            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;            background: rgba(0, 0, 0, 0.8);
         }
 
         .modal__box {
             position: absolute;
             top: calc(50vh - 100px);
-            left: calc(50vw - 200px);
             background-color: white;
             display: flex;
             justify-content: center;
@@ -94,24 +96,45 @@
             .main {display: none;}
             .sub {display: none;}
             .video {
-                display: block;
+                display: flex;
+            justify-content: center;
+            align-items: center;
                 width: 100vh;
-                height: 100vh;
+                height: auto;
             }
             .video img{
                 width: 100%;
-            max-width: 100vh;
-            max-height: 100vh;
+                display: flex;
+            justify-content: center;
+            align-items: center;
             background-size: cover;
             top: 0;
             left: 0;
             bottom: 0;
             right: 0;
             }
+            .modal__background {
+                width: auto;
+                height: auto;
+                display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background: rgba(0, 0, 0, 0.8);
+        }
+
             .modal__box {
-                width: 350px;
-                height: 120px;
-                }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            width: auto;
+            height: auto;
+            }
+            .modal__box h3{
+                font-size: 0.8em;                
+                margin: 12px;
+            }
         }
 
     </style>
