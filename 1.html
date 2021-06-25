@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>제2회 오아시스 해커톤</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="shortcut icon" href="파비콘.JPG">
+    <link rel="icon" href="파비콘.JPG">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,200&family=Roboto:ital,wght@0,400;1,100&display=swap"
+        rel="stylesheet">
+    <script src='main.js'></script>
+    <style>
+        html {
+            background-color: #04071A;
+
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: auto;
+        }
+
+        .header img {
+            width: 100%;
+            height: 60%;
+            background-size: cover;
+        }
+
+        .main {
+            margin-top: 2%;
+            width: 120vh;
+            height: auto;
+        }
+
+        .main img {
+            width: 100%;
+            background-size: cover;
+        }
+
+        .sub {
+            width: 120vh;
+            height: auto;
+        }
+
+        .sub img {
+            width: 100%;
+            background-size: cover;
+        }
+
+        .video { display: none;
+        }
+        .modal__background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal__box {
+            position: absolute;
+            top: calc(50vh - 100px);
+            left: calc(50vw - 200px);
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            width: 400px;
+            height: 200px;
+            font-family: 'Karla', sans-serif;
+        }
+
+        @media screen and (max-width: 1008px) {
+            .header {display: none;}
+            .main {display: none;}
+            .sub {display: none;}
+            .video {
+                display: block;
+                width: 100vh;
+                height: 100vh;
+            }
+            .video img{
+                width: 100%;
+            max-width: 100vh;
+            max-height: 100vh;
+            background-size: cover;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            }
+            .modal__box {
+                width: 350px;
+                height: 120px;
+                }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="header.jpg">
+    </div>
+
+    <div class="main">
+        <img src="main.gif">
+    </div>
+
+
+    <div class="sub">
+        <img src="sub.jpg">
+    </div>
+
+    <div class="modal__background">
+        <div class="modal__box">
+            <h3>On June 28th, <br><br>this webpage will be officially opened.</h3>
+        </div>
+    </div>
+
+    <div class="video">
+        <img src="main.gif">
+    </div>
+
+</body>
+
+</html>
